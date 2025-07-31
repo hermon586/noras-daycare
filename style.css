@@ -1,0 +1,72 @@
+body {
+  padding-top: 70px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  background-color: #fefefa;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3a3a3a;
+}
+
+/* Hero */
+/* Hero section styling */
+.hero-section {
+  background-image: url('assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Primary button styling for pastel palette */
+.btn-primary {
+  background-color: #fbbf24;
+  border-color: #fbbf24;
+  color: #1f2937;
+}
+.btn-primary:hover {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: #1f2937;
+}
+
+/* Scroll to top button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  background-color: #fbbf24;
+  border: none;
+  color: #1f2937;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
